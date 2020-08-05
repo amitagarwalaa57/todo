@@ -3,16 +3,8 @@ var mongoose = require('mongoose');
 
 
 //connect to db
-mongoose.connect('mongodb+srv://test:test@test.rj8mb.mongodb.net/<mydb>?retryWrites=true&w=majority',{ useUnifiedTopology: true, useNewUrlParser: true });
-/*const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://test:test@test.rj8mb.mongodb.net/<mydb>?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  console.log("connected");
-  //client.close();
-});*/
+mongoose.connect('',{ useUnifiedTopology: true, useNewUrlParser: true });
+
 
 //create schema
 var todoSchema = new mongoose.Schema({
